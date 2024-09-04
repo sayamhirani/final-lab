@@ -14,14 +14,7 @@
   <link href="css/styles.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon"
     href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico">
-  <style>
-    /* Smooth transition effect for the background color */
-    body {
-      transition: background-color 2s ease;
-      background-color: #F0E68C;
-      /* Initial color */
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -34,28 +27,27 @@
         <h1>Pending Tasks</h1>
         <div>
           <div class="border1"></div>
-          <div c </div>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="col-12">
-            <input id="userInput" type="text" autocomplete="off" placeholder="New task..." maxlength="57">
-            <button id="enter">Add</button>
-            <button id="enter">Ask user</button>
-          </div>
-        </div>
-
-        <!-- Empty List -->
-        <div class="row">
-          <div class="listItems col-12">
-            <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
-            </ul>
-          </div>
-        </div>
-
       </div>
-      <script type="text/javascript" src="js/script.js"></script>
+
+      <div class="row">
+        <div class="col-12">
+          <input id="userInput" type="text" autocomplete="off" placeholder="New task..." maxlength="57">
+          <button id="enter">Add</button>
+          <button id="askUser">Ask User</button> <!-- Updated ID -->
+        </div>
+      </div>
+
+      <!-- Empty List -->
+      <div class="row">
+        <div class="listItems col-12">
+          <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

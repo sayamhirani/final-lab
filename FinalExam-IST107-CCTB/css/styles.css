@@ -1,13 +1,7 @@
-/*
-# This project is based on a public project but has been modified
-# according to the requirements of the IST 107 Course.
-# Instructor: Washington Valencia
-# Institution: CCTB College
-*/
 body {
   background: #ffffff;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .intro {
@@ -27,16 +21,15 @@ p {
 
 #first {
   margin-top: 10px;
-  color: #FFCD5D;
+  color: #ffcd5d;
 }
 
 #second {
-  color: #51DF70;
-
+  color: #51df70;
 }
 
 #third {
-  color: #025F70;
+  color: #025f70;
   margin-bottom: 30px;
 }
 
@@ -61,17 +54,15 @@ p {
 }
 
 #enter:hover {
-  background-color: #02798F;
-  color: #FFCD5D;
+  background-color: #02798f;
+  color: #ffcd5d;
 }
 
 ul {
   text-align: left;
   margin-top: 20px;
   display: inline-block;
-
 }
-
 
 li {
   list-style: none;
@@ -89,6 +80,7 @@ li {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5 ease;
+  position: relative; /* Needed for positioning the delete button */
 }
 
 li:hover {
@@ -96,13 +88,14 @@ li:hover {
   color: #000;
 }
 
-li>button {
+li > button {
   font-weight: normal;
   background: none;
   border: none;
   float: right;
   color: #025f70;
   font-weight: 800;
+  cursor: pointer; /* Ensure the button appears clickable */
 }
 
 input {
@@ -112,12 +105,22 @@ input {
   border: none;
 }
 
-
 .done {
-  background: #51DF70 !important;
-  color: #00891E;
+  background: #51df70 !important;
+  color: #00891e;
 }
 
-.delete {
-  display: none;
+/* Added styles for delete button */
+.delete-btn {
+  background-color: rgb(0, 255, 34);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: rgb(0, 255, 34);
 }
